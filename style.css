@@ -21,10 +21,6 @@ ul {
     text-align: center;
 }
 
-.carousel-item img {
-    height: 90vh;
-}
-
 #novidades {
     display: flex;
     margin-top: 5%;
@@ -64,10 +60,25 @@ footer {
     background-color: red;
 }
 
+.carousel img {
+
+    width: 100%; 
+   
+    height: 300px; 
+   
+    object-fit: cover; 
+   
+   }
+
+
+
 @media screen and (max-width:670px) {
     #novidades {
         flex-direction: column-reverse;
+        align-items: center;
     }
+
+
 
     .texto {
         display: flex;
@@ -77,6 +88,10 @@ footer {
 
     .texto p {
         text-align: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
     }
 
 
